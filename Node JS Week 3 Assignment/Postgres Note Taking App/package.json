@@ -1,0 +1,25 @@
+{
+  "name": "note-taking-app",
+  "version": "2.0.0",
+  "description": "Weekly Assignment 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "express-handlebars": "^4.0.4",
+    "knex": "^0.21.1",
+    "pg": "^8.2.1",
+    "pg-escape": "^0.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  }
+}

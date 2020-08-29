@@ -1,0 +1,34 @@
+*, *:before, *.after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+}
+
+#bluebox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+
+#greenbox {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    float: right;
+}
+
+#redbox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clear: both;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -50px;
+}

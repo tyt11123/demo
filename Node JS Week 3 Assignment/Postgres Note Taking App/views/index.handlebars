@@ -1,0 +1,25 @@
+<div class='row'>
+    <div class='col-sm-6'>
+        <div>
+            Add note:
+        </div>
+        <div>
+            <textarea id="addtext" rows="5"></textarea>
+        </div>
+        <div>
+            <input id="add" type="submit">
+        </div>
+    </div>
+    <div class='col-sm-6'>
+    {{#each notes}}
+        <div class="sticky">
+            <textarea class="note">{{this}}</textarea>
+            <button type="button" class="btn btn-danger align-top delete">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+    {{/each}}
+    </div>
+</div>
+    
+<img id='dance' src="./assets/img/do-the-evolution-line-dance.gif" alt="dance">

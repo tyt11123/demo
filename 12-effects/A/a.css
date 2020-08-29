@@ -1,0 +1,25 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.column {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-flex;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    position: fixed;
+    color: darkred;
+}
+
+footer div i {
+    position: relative;
+}

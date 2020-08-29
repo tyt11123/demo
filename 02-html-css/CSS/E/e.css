@@ -1,0 +1,23 @@
+*, *:before, *.after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graybox {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 50px;
+}

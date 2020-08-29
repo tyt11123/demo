@@ -1,0 +1,16 @@
+{
+  "name": "lyrics",
+  "version": "1.0.0",
+  "description": "generate random song lyrics based on US country songs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alex",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jest": "^26.0.1",
+    "loadsh": "0.0.4"
+  }
+}

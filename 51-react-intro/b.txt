@@ -1,0 +1,3 @@
+<script src="/static/js/bundle.js"></script>
+<script src="/static/js/0.chunk.js"></script>
+<script src="/static/js/main.chunk.js"></script>

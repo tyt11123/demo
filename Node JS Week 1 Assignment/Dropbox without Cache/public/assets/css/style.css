@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	min-width: 600px;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #888;
+	-webkit-border-radius: 5px;
+}
+
+::-webkit-scrollbar:vertical {
+	background-color: #fff;
+}
+
+.upload_form {
+	width: 600px;
+	height: 40px;
+	background-image: url(../img/upload_form.png);
+	background-repeat: no-repeat;
+}
+
+.file_input {
+	width: 363px;
+	height: 31px;
+	background-image: url(../img/upload_browse.png);
+	background-repeat: no-repeat;
+	float: left;
+	left: 110px;
+	position: relative;
+	top: 5px;
+	vertical-align: middle;
+}
+
+.upload_button {
+	background-color: transparent;
+	background-image: url(../img/upload_button.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 90px;
+	float: right;
+	top: 5px;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	right: 10px;
+}
+
+.progress {
+	visibility:hidden;
+	position: relative;
+	top: 13px;
+	float: left;
+	height: 15px;
+	width: 128px;
+	left: -150px;
+}

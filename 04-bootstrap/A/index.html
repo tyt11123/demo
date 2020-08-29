@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Day 4 Bootstrap Homework</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ce3b2d5aaf.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a data-scroll class="navbar-brand" href="#">
+            <i width="30" height="30" class="fas fa-meteor d-inline-block "></i>
+            Learning Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Company</h1>
+        <p>We specialize in blablabla</p>
+        <hr>
+        <a data-scroll href="#about">
+            <button type="button" class="btn btn-success btn-lg text-uppercase">About Us</button>
+        </a>
+    </div>
+    <div class="container-fluid bg-primary no-gutters text-center" id="about">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>About Company Page</h2>
+                <h4>Lorem ipsum..</h4>
+                <p>Lorem ipsum..</p>
+                <a target="_blank" href="https://www.google.com/search?q=bootstrap+template">
+                    <button class="btn btn-success btn-lg">Bootstrap Template</button>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <i class="fas fa-meteor fa-10x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info text-center" id="services">
+        <h2>Services</h2>
+        <hr>
+        <h4>What we offer...</h4>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-cubes fa-5x"></i>
+                <h4>Cubes</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="far fa-gem fa-5x"></i>
+                <h4>Diamond</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-fire-alt fa-5x"></i>
+                <h4>Fire</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="fab fa-canadian-maple-leaf fa-5x"></i>
+                <h4>Leaf</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid no-gutters bg-secondary" id="portfolio">
+        <div class="row no-gutters">
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/portfolio/1.jpg" alt="Peter" class="pflimage">
+                <div class="pflhover">
+                    <h4>Peter</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/portfolio/2.jpg" alt="Mary" class="pflimage">
+                <div class="pflhover">
+                    <h4>Mary</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/portfolio/3.jpg" alt="Tom" class="pflimage">
+                <div class="pflhover">
+                    <h4>Tom</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/portfolio/4.jpg" alt="John" class="pflimage">
+                <div class="pflhover">
+                    <h4>John</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Lorem ipsum..</h1>
+                <a target="_blank" href="https://daneden.github.io/animate.css/">
+                    <button class="btn btn-success btn-lg animated infinite heartBeat delay-2s">Button with animation</button>
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-center" id="contact">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2>Let's Not Get In Touch!</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-3 mx-auto">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-mobile-alt fa-stack-1x"></i>
+                    <i class="fas fa-ban fa-stack-2x"></i>
+                </span>
+                <p>+852 9475-0922</p>
+            </div>
+            <div class="col-sm-3 mx-auto">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-mail-bulk fa-stack-1x"></i>
+                    <i class="fas fa-ban fa-stack-2x"></i>
+                </span>
+                <a href="mailto:tyt11123@yahoo.com.hk?subject=Testing">
+                    <p>tyt11123@yahoo.com.hk</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Smooth Scroll -->
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

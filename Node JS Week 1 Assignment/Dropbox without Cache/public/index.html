@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="upload_form">
+        <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return progress();">
+            <div class="file_input" id="file_input">
+                <input name="file[]" type="file" accept="*" multiple style="width:363px" />
+            </div>
+            <input id="upload_button" type="submit" class="upload_button" value="" />
+            <div class="progress" id="progress">
+                <img src="./assets/img/ajax-loader.gif" alt="" />
+            </div>
+        </form>
+    </div>
+    <div id="storage"><a href="./storage/">Storage</a></div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/progress.js"></script>
+</body>
+
+</html>
+
+<!-- just stealing these codes from https://img.eservice-hk.net/chrome/eImage.crx -->

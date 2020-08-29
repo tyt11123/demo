@@ -1,0 +1,72 @@
+*, *:before, *.after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body, header, section, footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#headerLogo {
+    padding-left: 2vw;
+}
+
+#sectionContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#flowershop {
+    width: 100%;
+    height: auto;
+    filter: brightness(30%);
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    width: 300px;
+    height: 10vh;
+    font-size: 30px;
+    background-color: greenyellow;
+    color: white;
+    border: 1px solid black;
+    border-radius: 150px;
+}
+
+footer {
+    background-color: gray;
+}
+
+#footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5vw;
+}
+
+p {
+    margin: 3vw;
+}

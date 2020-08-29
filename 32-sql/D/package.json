@@ -1,0 +1,16 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "Day 32 Exercise D",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-reader": "^1.0.6",
+    "express": "^4.17.1",
+    "pg": "^8.2.1"
+  }
+}

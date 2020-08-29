@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.jumbotron {
+    background-image: url("../img/bg-masthead.jpg");
+    background-size: cover;
+    background-color: dimgray;
+    background-blend-mode: multiply;
+    color: #ffffff;
+    padding: 100px 25px;
+    margin-bottom: 0;
+}
+
+#about, #services, #contact {
+    padding: 100px 60px;
+    color: #ffffff;
+}
+
+#portfolio {
+    padding: 0 0 50px 0;
+    color: #ffffff;
+}
+
+hr {
+    border: 1px solid #ffff00;
+    width: 5rem;
+}
+
+button {
+    margin-top: 3rem;
+}
+
+.fas, .far, .fab {
+    color: #ffff00;
+}
+
+.fa-ban {
+    color:#ff6347;
+}
+
+.fa-stack {
+    margin-bottom: 20px;
+}
+
+i {
+    padding: 10px;
+}
+
+.pflimage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.pflhover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pfl:hover .pflimage {
+    opacity: 0.3;
+}
+  
+.pfl:hover .pflhover {
+    opacity: 1;
+}

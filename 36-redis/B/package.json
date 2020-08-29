@@ -1,0 +1,14 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "Day 36 Exercise B",
+  "main": "b.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^3.0.2"
+  }
+}

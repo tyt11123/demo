@@ -1,0 +1,60 @@
+<html>
+<head>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form select { width: 19%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        form input { border: 0; padding: 10px; width: 70%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 5px 10px; }
+        #messages li:nth-child(odd) { background: #eee; }
+    </style>
+</head>
+<body>
+    <ul id="messages"></ul>
+    <form action="">
+      <select id="mySelect">
+        <option value="apple">Apple</option>
+        <option value="orange">Orange</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="banana">Banana</option>
+      </select>
+        <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+  let name = null;
+  do {
+    name = prompt("Please enter your name:","Harry Potter");
+  } while (!name);    // request for user name
+
+    var socket = io();
+    $(function () {
+    socket.emit('join',$('#mySelect').val());   // #mySelect is the room selection
+    $('#mySelect').change(function(){
+      socket.emit('join',$('#mySelect').val());
+    });
+    $('form').submit(function(){
+      let msg = `${name}: ${$('#m').val()}`;    // merge user name with message
+      socket.emit('chat message', msg, $('#mySelect').val());   // emit message as well as the room
+      $('#m').val('');
+      return false;
+    });
+    socket.on('chat message 2', function(msg){
+      $('#messages').append($('<li>').text(msg));
+    });
+    socket.on('join message', function(msg){
+      $('#messages').append($('<li>').text(msg));
+    });
+    socket.on('disconnect', function(msg){
+      $('#messages').append($('<li>').text(msg));
+    });
+  });
+</script>
+
+</body>
+</html>
