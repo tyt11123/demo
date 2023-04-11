@@ -5,7 +5,7 @@
   "main": "a.js",
   "dependencies": {
     "csv-reader": "^1.0.6",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "pg": "^8.2.1"
   },
   "devDependencies": {},
