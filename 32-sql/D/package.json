@@ -11,6 +11,6 @@
   "dependencies": {
     "csv-reader": "^1.0.6",
     "express": "^4.17.1",
-    "pg": "^8.2.1"
+    "pg": "^8.11.3"
   }
 }
