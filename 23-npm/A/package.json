@@ -9,7 +9,7 @@
   "author": "alex",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "jest": "^26.0.1",
     "loadsh": "0.0.4"
   }
